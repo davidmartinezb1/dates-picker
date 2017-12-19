@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <title></title>
+    <meta charset="UTF-8">
+
+</head>
+
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="https://cdn.rawgit.com/dubrox/Multiple-Dates-Picker-for-jQuery-UI/master/jquery-ui.multidatespicker.css" rel="stylesheet" />
+    <link href="https://code.jquery.com/ui/1.12.1/themes/pepper-grinder/jquery-ui.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.rawgit.com/dubrox/Multiple-Dates-Picker-for-jQuery-UI/master/jquery-ui.multidatespicker.js"></script>
+    <div id='mdp'></div>
+    <input type="text" id="altField" value="">
+    <script>
+        $('#mdp').multiDatesPicker({
+            altField: '#altField',
+            minDate: 0, // today
+            maxDate: 30 // +30 days from today
+
+        });
+    </script>
+</body>
+
+</html>
